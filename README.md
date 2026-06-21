@@ -28,6 +28,8 @@ Public documentation is available through GitHub Pages:
 https://jaydubb85.github.io/SUPERNOVA-Releases/
 ```
 
+The documentation covers installation, first launch, DICOM node setup, migration workflows, DICOM tools, troubleshooting, and data safety guidance.
+
 ## Source Code
 
 The SUPERNOVA source code is maintained in a private repository. This repository is for public downloads, documentation, issues, and release notes only.

@@ -4,11 +4,45 @@ url: https://jaydubb85.github.io
 baseurl: /SUPERNOVA-Releases
 
 markdown: kramdown
-theme: minima
 
-header_pages:
-  - downloads.md
-  - support.md
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
 
 github_repo: https://github.com/JayDubb85/SUPERNOVA-Releases
 latest_release: https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest
+
+nav:
+  - title: Overview
+    url: /
+  - title: Getting Started
+    children:
+      - title: Downloads
+        url: /downloads.html
+      - title: Install
+        url: /install.html
+      - title: Quick Start
+        url: /quick-start.html
+  - title: User Guide
+    children:
+      - title: Concepts
+        url: /concepts.html
+      - title: DICOM Nodes
+        url: /dicom-nodes.html
+      - title: Migration Workflows
+        url: /migration-workflows.html
+      - title: DICOM Tools
+        url: /dicom-tools.html
+      - title: Logs and Troubleshooting
+        url: /troubleshooting.html
+  - title: Safety
+    children:
+      - title: Data Safety
+        url: /data-safety.html
+      - title: Release Notes
+        url: /release-notes.html
+      - title: Support
+        url: /support.html
+  - title: Downloads
+    url: https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest
+    external: true
