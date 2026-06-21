@@ -1,0 +1,14 @@
+title: SUPERNOVA
+description: Public downloads and documentation for SUPERNOVA
+url: https://jaydubb85.github.io
+baseurl: /SUPERNOVA-Releases
+
+markdown: kramdown
+theme: minima
+
+header_pages:
+  - downloads.md
+  - support.md
+
+github_repo: https://github.com/JayDubb85/SUPERNOVA-Releases
+latest_release: https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest
