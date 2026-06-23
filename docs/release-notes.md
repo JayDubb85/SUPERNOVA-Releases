@@ -10,6 +10,12 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v0.1.8
+
+Fixes:
+
+- Improved PACS-to-PACS CSV audit rows so C-FIND accession number, institution name, and modality metadata are preserved when available.
+
 ## v0.1.7
 
 Fixes:
