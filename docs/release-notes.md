@@ -10,6 +10,12 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v0.1.7
+
+Fixes:
+
+- Fixed threaded PACS-to-PACS and directory-to-PACS transfers so worker threads no longer reuse live database-bound PACS configuration objects.
+
 ## v0.1.6
 
 Fixes:
