@@ -10,6 +10,14 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v0.1.6
+
+Fixes:
+
+- Removed SUPERNOVA's hard-coded 2000-result assumptions from PACS query preview behavior.
+- Improved C-FIND handling for large query result streams.
+- Fixed stored PACS query results so one query can correctly contain multiple study rows.
+
 ## v0.1.0
 
 Initial public desktop release.
