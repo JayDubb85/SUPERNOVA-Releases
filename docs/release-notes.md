@@ -10,6 +10,14 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v0.1.9
+
+Fixes:
+
+- Fixed Windows runtime storage defaults so logs, CSV audit files, temp DICOM files, and the local database use the writable per-user app data folder.
+- Fixed Windows log file encoding so SUPERNOVA application and migration logs can write formatted status symbols reliably.
+- Improved default settings initialization so CSV, log, and temp storage paths are persisted on fresh installs.
+
 ## v0.1.8
 
 Fixes:
