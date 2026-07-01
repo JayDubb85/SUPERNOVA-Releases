@@ -10,6 +10,28 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v0.1.11
+
+Highlights:
+
+- Added CSV-driven PACS migration support for Study UID, accession number, patient ID, and other selected query columns.
+- Added PACS-to-directory migration support with directory organization options.
+- Improved migration progress feedback, preview behavior, retry details, and failure CSV handling.
+- Added native file and folder picker integration for packaged desktop builds.
+- Improved DICOM tag transformations with prefix and suffix actions.
+- Improved transfer syntax handling for objects that should preserve their original syntax.
+- Fixed Settings validation so SUPERNOVA's own active SCP listener is not reported as a port conflict.
+- Removed the unused dashboard Analytics widget.
+
+## v0.1.10
+
+Fixes:
+
+- Fixed the Logs page so DICOM logs switch to the active migration-specific DICOM log file during migrations.
+- Improved Logs page controls so refresh buttons keep their labels on one line.
+- Added explicit DICOM tag transformation actions for prefixing and suffixing existing tag values.
+- Fixed DICOM tag rule validation so delete-tag rules are accepted and applied consistently.
+
 ## v0.1.9
 
 Fixes:
