@@ -10,6 +10,19 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v0.1.12
+
+Highlights:
+
+- Added Institution Name as an optional root folder for directory-output workflows.
+- Added smarter Study Date and Institution Name backfill for directory organization when matching study data is available.
+- Added an Unknown Institution review workflow so users can locally assign institution names after a migration and reprocess files into the correct folders.
+- Improved directory organization so Study Date and Patient ID layouts separate exams by accession number or numbered study folders.
+- Added storage path details to migration CSV output.
+- Added temp DICOM cleanup after successful processing.
+- Added SCP port diagnostics to help identify which process is using the configured listener port.
+- Improved transfer syntax handling so DICOM objects with missing or invalid pixel payloads can preserve their original syntax while still applying header-only updates.
+
 ## v0.1.11
 
 Highlights:
