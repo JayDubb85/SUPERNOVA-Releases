@@ -10,6 +10,18 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v0.1.13
+
+Highlights:
+
+- Expanded the DICOM Anonymizer to support file and directory anonymization with selectable DICOM tags.
+- Added live progress feedback for directory anonymization, including processed file counts and current file details.
+- Improved directory anonymization speed with bounded parallel file processing.
+- Skipped hidden system files such as `.DS_Store` during directory anonymization.
+- Added anonymize support to DICOM tag manipulation rules using DICOM VR-safe replacement values.
+- Hardened CSV-guided migration preview handling so empty preview matches cannot proceed unnoticed.
+- Improved retry logging behavior around retry exhaustion.
+
 ## v0.1.12
 
 Highlights:
