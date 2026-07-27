@@ -10,6 +10,17 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.0
+
+Highlights:
+
+- Added crash isolation for transfer syntax conversion so native codec failures do not take down the main backend service.
+- Added log rotation for application and DICOM logs, capped at 100 MB per file with retained backups.
+- Added resume-friendly directory output handling that can skip files already present in the destination.
+- Reduced high-volume transfer syntax success logging during large migrations.
+- Added current-directory progress feedback during directory scanning.
+- Updated core frontend and backend dependencies for the 2.0 release line.
+
 ## v0.1.13
 
 Highlights:
