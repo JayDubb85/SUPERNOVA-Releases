@@ -10,6 +10,14 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.1
+
+Highlights:
+
+- Added a required directory destination collision policy: skip existing files, replace existing files, or keep both using numbered filenames.
+- Fixed migration progress reporting when directory scan estimates are lower than the final processed file count.
+- Hardened progress API responses so completed migrations cannot exceed 100% and break dashboard polling.
+
 ## v2.0.0
 
 Highlights:
