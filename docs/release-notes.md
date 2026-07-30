@@ -10,6 +10,14 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.2
+
+Highlights:
+
+- Added additional DICOM pixel codec plugins for better JPEG, JPEG 2000, JPEG-LS, and RLE decode coverage.
+- Added codec/plugin availability diagnostics to transfer syntax conversion logs.
+- Preserves/copies DICOM objects with their original transfer syntax when compressed pixel data cannot be decoded.
+
 ## v2.0.1
 
 Highlights:
