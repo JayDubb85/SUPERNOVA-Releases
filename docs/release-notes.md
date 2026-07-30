@@ -10,6 +10,13 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.3
+
+Highlights:
+
+- Populates the migration CSV modifications column with transfer syntax conversion, skipped conversion, failed conversion, and no-modification audit notes.
+- Adds clearer CSV audit text for PACS-to-PACS migrations that are managed by C-MOVE without local DICOM rewriting.
+
 ## v2.0.2
 
 Highlights:
