@@ -10,6 +10,16 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.4
+
+Highlights:
+
+- Rebuilt the Duplicate Finder for large production directories with streaming scans, persistent duplicate review sessions, and CSV audit output.
+- Added in-app duplicate review tools for quarantining, restoring, purging quarantined files, cleaning empty folders, and marking groups resolved.
+- Added group and file selection controls for bulk quarantine and bulk resolve workflows.
+- Added duplicate scan progress on the dashboard, including current directory feedback during scans.
+- Improved duplicate reporting with transfer syntax, metadata, file size, hash, and difference summaries.
+
 ## v2.0.3
 
 Highlights:
