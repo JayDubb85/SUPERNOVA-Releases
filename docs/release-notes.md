@@ -10,6 +10,16 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.5
+
+Highlights:
+
+- Added durable database-backed migration work queues and recovery monitoring for long-running migrations.
+- Added regular and performance query-processing modes for PACS query/retrieve workflows.
+- Improved dashboard progress visibility for queued, active, completed, failed, and retryable work.
+- Hardened CSV audit logging for concurrent workers and accurate partial migration counts.
+- Improved migration wizard layout and added visible dropdown arrows across the app.
+
 ## v2.0.4
 
 Highlights:
