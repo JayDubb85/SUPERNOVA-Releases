@@ -10,6 +10,16 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.7
+
+Highlights:
+
+- Fixed SQLite lock contention that could stop directory-to-directory migrations shortly after startup.
+- Reduced directory scanner write-lock duration by committing queued work before handing batches to processors.
+- Hardened durable work queue updates to avoid SQLAlchemy autoflush rollback traps after busy database writes.
+- Fixed directory-to-directory finalization so a crashed processing loop cannot be reported as completed.
+- Applied the directory scanner lock-window fix to Directory to PACS workflows as well.
+
 ## v2.0.6
 
 Highlights:
