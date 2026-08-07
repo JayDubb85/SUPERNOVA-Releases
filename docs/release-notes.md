@@ -10,6 +10,17 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.6
+
+Highlights:
+
+- Hardened PACS-to-PACS migrations with a safe regular-mode C-MOVE default and explicit performance-mode concurrency.
+- Added C-MOVE failure-storm protection so SUPERNOVA stops claiming queued work when a remote PACS/destination begins failing repeatedly.
+- Fixed PACS-to-PACS final status reporting so mixed success/failure runs are marked partial instead of completed.
+- Improved failed migration records with more useful C-MOVE error details.
+- Fixed duplicate SUCCESS CSV rows when analytics/export generation runs more than once.
+- Improved in-app update lookup reliability when GitHub release metadata is temporarily stale or split across release records.
+
 ## v2.0.5
 
 Highlights:
