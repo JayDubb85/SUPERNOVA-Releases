@@ -10,6 +10,16 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.8
+
+Highlights:
+
+- Restored PACS-to-PACS regular-mode throughput by using the configured migration worker count instead of forcing single-study C-MOVE processing.
+- Added a visible Migration Worker Count setting for workflows that process queued migration work items.
+- Renamed the existing thread-pool setting to C-STORE Connection Count so direct-send DICOM connection tuning remains available and clearer.
+- Improved PACS-to-PACS startup logging to report the exact concurrent C-MOVE worker count used by each migration.
+- Clarified Regular Mode and Performance Mode descriptions in the migration wizard.
+
 ## v2.0.7
 
 Highlights:
