@@ -10,6 +10,16 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.9
+
+Highlights:
+
+- Hardened large Directory-to-Directory migrations with bounded scan queues and periodic scanner/processor status logging.
+- Added conservative InstitutionName/StudyDate routing guardrails so metadata backfill can still work without letting unresolved files stall a migration indefinitely.
+- Applied large-directory queue backpressure and status logging to Directory-to-PACS workflows.
+- Added directory-destination routing safeguards for PACS Relay, PACS-to-Directory, and CSV-guided PACS directory output.
+- Improved PACS-to-PACS resilience by retrying transient C-MOVE failures and keeping queue leases alive during long-running moves.
+
 ## v2.0.8
 
 Highlights:
