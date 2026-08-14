@@ -10,6 +10,16 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.10
+
+Highlights:
+
+- Improved large directory migration throughput with concurrent file processing while preserving directory routing guardrails.
+- Added a separate Conversion Worker Count setting for transfer syntax conversion tuning.
+- Reduced work-queue database contention with cached queue-table setup and bulk terminal status updates.
+- Improved Directory-to-PACS and PACS Relay transfer syntax conversion worker pooling.
+- Cleaned backend migration test noise and expanded work-queue coverage for bulk status updates.
+
 ## v2.0.9
 
 Highlights:
