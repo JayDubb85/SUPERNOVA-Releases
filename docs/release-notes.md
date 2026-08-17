@@ -10,6 +10,16 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.11
+
+Highlights:
+
+- Added lock-aware SQLite retry/backoff around migration queue, heartbeat, progress, and failed-file writes.
+- Added a directory-destination option to preserve unreadable DICOM candidates as-is under `_UNREADABLE_DICOM`.
+- Kept PACS destinations strict so unreadable or invalid DICOM objects are logged and skipped instead of being sent to a DICOM node.
+- Improved scanner handling for large mixed directories by skipping unsupported file extensions before DICOM validation.
+- Added workspace/build guards and macOS signing cleanup for more reliable local and release builds.
+
 ## v2.0.10
 
 Highlights:
