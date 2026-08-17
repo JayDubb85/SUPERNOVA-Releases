@@ -10,6 +10,15 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.0.12
+
+Highlights:
+
+- Added DICOM tag manipulation actions to remove an exact prefix or suffix from existing tag values.
+- Updated directory-output routing so Patient ID based folders can use transformed Patient IDs.
+- Changed macOS distribution to Apple Silicon only and removed Intel macOS build targets.
+- Hardened macOS release publishing so Mac assets no longer depend on Windows creating the release first.
+
 ## v2.0.11
 
 Highlights:

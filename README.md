@@ -15,8 +15,9 @@ https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest
 Choose the asset for your platform:
 
 - Apple Silicon Mac: `SUPERNOVA-*-arm64.dmg`
-- Intel Mac: `SUPERNOVA-*.dmg`
 - Windows: `SUPERNOVA.Setup.*.exe`
+
+SUPERNOVA macOS builds support Apple Silicon Macs only.
 
 Each release includes SHA-256 checksum files for verification.
 

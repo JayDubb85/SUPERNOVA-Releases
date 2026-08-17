@@ -15,10 +15,9 @@ SUPERNOVA downloads are published as GitHub Release assets. Use the latest relea
 | Platform | Download |
 |----------|----------|
 | Apple Silicon Mac | `SUPERNOVA-*-arm64.dmg` |
-| Intel Mac | `SUPERNOVA-*.dmg` without `arm64` in the name |
 | Windows | `SUPERNOVA.Setup.*.exe` |
 
-Most modern MacBook Pro, MacBook Air, Mac mini, and iMac models use Apple Silicon. Older Intel Macs should use the Intel build.
+SUPERNOVA macOS builds support Apple Silicon Macs only.
 
 ## Checksums
 
@@ -28,7 +27,7 @@ Each release includes SHA-256 checksum files. These can be used to confirm a dow
 
 macOS release builds are signed and notarized. Most users should be able to open the `.dmg` normally.
 
-If macOS warns about a download, confirm that the file came from the official SUPERNOVA release page and that you selected the correct Apple Silicon or Intel build.
+If macOS warns about a download, confirm that the file came from the official SUPERNOVA release page and that you selected the Apple Silicon build.
 
 ## Windows
 
