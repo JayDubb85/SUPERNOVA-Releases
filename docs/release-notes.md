@@ -10,7 +10,7 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
-## v2.1.0
+## v2.1.1
 
 Highlights:
 
@@ -24,6 +24,15 @@ Highlights:
   diagnostics, PHI-safe logging, and recovery coverage for all seven migration
   workflow types.
 - Assigned the default DICOM listener to `SUPERNOVA:11116`.
+- Hardened Windows service permissions with a per-service SID and machine-wide
+  ProgramData paths, and separated installer-owned schema migration from
+  read-only service startup checks.
+
+## v2.1.0
+
+This transitional release retained legacy desktop assets while Galaxy Windows
+installer validation was completed. Galaxy administrators should use v2.1.1
+or newer.
 
 ## v2.0.12
 
