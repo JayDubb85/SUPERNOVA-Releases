@@ -1,8 +1,8 @@
 # SUPERNOVA Downloads
 
-This public repository hosts SUPERNOVA desktop downloads and public documentation.
+This public repository hosts Galaxy SUPERNOVA downloads and public documentation.
 
-SUPERNOVA is a local DICOM migration workstation for directory and PACS workflows. The application is distributed as bundled desktop installers that start the frontend and local backend together.
+SUPERNOVA is a NEXUS-managed Galaxy Imaging Suite application for directory and PACS migration workflows.
 
 ## Download
 
@@ -14,10 +14,9 @@ https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest
 
 Choose the asset for your platform:
 
-- Apple Silicon Mac: `SUPERNOVA-*-arm64.dmg`
 - Windows: `SUPERNOVA.Setup.*.exe`
 
-SUPERNOVA macOS builds support Apple Silicon Macs only.
+Standalone Windows and macOS desktop editions are no longer produced or supported.
 
 Each release includes SHA-256 checksum files for verification.
 

@@ -22,6 +22,8 @@ Highlights:
 - Removed the Migration Planner tool and its unused PDF dependency.
 - Updated the Galaxy Windows release workflow so validated installers publish
   correctly from the private source repository.
+- Retired standalone Windows and macOS application builds; all future releases
+  are NEXUS-managed Galaxy SUPERNOVA releases.
 
 ## v2.1.1
 

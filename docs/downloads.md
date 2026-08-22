@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Downloads
-description: Download SUPERNOVA Galaxy and desktop installers
+description: Download the Galaxy SUPERNOVA installer
 ---
 
 # Downloads
@@ -15,19 +15,11 @@ SUPERNOVA downloads are published as GitHub Release assets. Use the latest relea
 | Platform | Download |
 |----------|----------|
 | Galaxy on Windows Server | `SUPERNOVA-Setup-*-x64.exe` |
-| Legacy Apple Silicon desktop | `SUPERNOVA-*-arm64.dmg` from v2.0.16 |
-
-SUPERNOVA macOS builds support Apple Silicon Macs only.
+Standalone Windows and macOS editions are retired and are not produced for new releases.
 
 ## Checksums
 
 Each release includes SHA-256 checksum files. These can be used to confirm a downloaded installer matches the published release artifact.
-
-## macOS
-
-macOS release builds are signed and notarized. Most users should be able to open the `.dmg` normally.
-
-If macOS warns about a download, confirm that the file came from the official SUPERNOVA release page and that you selected the Apple Silicon build.
 
 ## Windows
 
@@ -41,6 +33,6 @@ before continuing.
 
 ## Release Artifacts
 
-Some older release files, such as `.blockmap`, `latest.yml`, or `.zip`, are used
-by legacy desktop update tooling. Galaxy administrators should download the
-hyphenated `SUPERNOVA-Setup-*-x64.exe` server installer.
+Galaxy administrators should download the hyphenated
+`SUPERNOVA-Setup-*-x64.exe` server installer. Older desktop artifacts remain
+historical and must not be used for current deployments.
