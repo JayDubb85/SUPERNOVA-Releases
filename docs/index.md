@@ -13,7 +13,7 @@ SUPERNOVA is a local DICOM migration workstation for moving studies between fold
 - Configures source PACS, destination PACS, source folders, and destination folders.
 - Runs directory-to-directory, directory-to-PACS, PACS-to-PACS, and PACS relay migrations.
 - Tracks progress, failures, retries, migration reports, and history.
-- Provides DICOM tools for connectivity tests, query/retrieve, header review, validation, anonymization, DICOMDIR, duplicate checks, and migration planning.
+- Provides DICOM tools for connectivity tests, query/retrieve, header review, validation, selected-tag de-identification, DICOMDIR, statistics, and duplicate checks.
 - Runs locally so migration activity stays under your workstation and network controls.
 
 ## Public Downloads

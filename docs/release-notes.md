@@ -10,6 +10,19 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.2
+
+Highlights:
+
+- Hardened the DICOM Header Viewer, Directory Validator, Statistics Generator,
+  DICOM Anonymizer, DICOMDIR, and Duplicate Finder workflows.
+- Combined DICOMDIR creation and existing-file review into one DICOMDIR tool.
+- Added safer duplicate quarantine integrity checks and more accurate DICOM-only
+  statistics and Part 10 validation reporting.
+- Removed the Migration Planner tool and its unused PDF dependency.
+- Updated the Galaxy Windows release workflow so validated installers publish
+  correctly from the private source repository.
+
 ## v2.1.1
 
 Highlights:

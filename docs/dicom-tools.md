@@ -44,10 +44,6 @@ Creates anonymized output for supported DICOM files. Validate anonymized output 
 
 Finds duplicate DICOM objects, often by SOP Instance UID or related identifiers.
 
-## Migration Planner
-
-Reviews a folder and estimates migration scope. Use it to understand volume before starting a larger run.
-
 ## DICOMDIR Tools
 
 SUPERNOVA can read, generate, and inspect DICOMDIR structures for media-oriented workflows.
