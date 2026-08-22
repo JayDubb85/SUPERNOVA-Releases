@@ -10,6 +10,21 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.0
+
+Highlights:
+
+- Introduced the NEXUS-hosted Galaxy browser edition and in-app Settings page.
+- Migrated Galaxy persistence to an isolated PostgreSQL database built from
+  versioned migrations with default-only clean installation.
+- Added an independent Windows Server installer, service recovery, repair,
+  pre-upgrade backup, preserve-by-default uninstall, checksums, SBOMs, and build
+  provenance.
+- Added NEXUS authentication/proxy enforcement, runtime ownership, readiness
+  diagnostics, PHI-safe logging, and recovery coverage for all seven migration
+  workflow types.
+- Assigned the default DICOM listener to `SUPERNOVA:11116`.
+
 ## v2.0.12
 
 Highlights:
