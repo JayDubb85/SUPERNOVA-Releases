@@ -31,11 +31,13 @@ If macOS warns about a download, confirm that the file came from the official SU
 
 ## Windows
 
-The Galaxy Windows release includes SHA-256 checksums, CycloneDX software bills
-of materials, and GitHub build-provenance attestations. Windows Authenticode
-signing is not configured yet. If SmartScreen warns about an unknown publisher,
-confirm the installer came from the official SUPERNOVA release page and verify
-its checksum before continuing.
+The Galaxy Windows release includes SHA-256 checksums and CycloneDX software
+bills of materials. GitHub-hosted build-provenance attestations are requested
+by the release workflow but are not currently available for the private,
+user-owned source repository. Windows Authenticode signing is also not
+configured yet. If SmartScreen warns about an unknown publisher, confirm the
+installer came from the official SUPERNOVA release page and verify its checksum
+before continuing.
 
 ## Release Artifacts
 
