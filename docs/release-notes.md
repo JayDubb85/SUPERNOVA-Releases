@@ -10,6 +10,19 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.6
+
+Highlights:
+
+- Browse buttons now open the standard Windows Explorer file or folder dialog
+  on the logged-in Galaxy server desktop through NEXUS 1.2.1 or newer.
+- Existing field paths initialize the native dialog and selected server paths
+  are populated automatically.
+- The restricted in-browser server picker remains available when the native
+  picker broker is not running.
+- After installing or upgrading NEXUS, sign out of Windows and back in once to
+  start the per-user picker broker.
+
 ## v2.1.5
 
 Highlights:

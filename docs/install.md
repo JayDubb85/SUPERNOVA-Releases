@@ -13,11 +13,13 @@ database, configuration, and application files.
 
 ## Galaxy Windows Server Install
 
-1. Install or update NEXUS on the Windows server.
-2. Download `SUPERNOVA-Setup-*-x64.exe` from the [latest release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest).
-3. Verify the published SHA-256 checksum.
-4. Run the installer as a local administrator on the NEXUS server.
-5. Sign in to NEXUS and open SUPERNOVA from the Applications page.
+1. Install or update NEXUS to version 1.2.1 or newer on the Windows server.
+2. Sign out of Windows and sign back in once so the NEXUS native-picker broker
+   starts in the interactive desktop session.
+3. Download `SUPERNOVA-Setup-*-x64.exe` from the [latest release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest).
+4. Verify the published SHA-256 checksum.
+5. Run the installer as a local administrator on the NEXUS server.
+6. Sign in to NEXUS and open SUPERNOVA from the Applications page.
 
 Windows builds are bundled and verified, but Windows code signing is not configured yet. This means Windows may describe the publisher as unknown until signing is added.
 
