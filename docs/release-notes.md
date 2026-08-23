@@ -10,6 +10,19 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.4
+
+Highlights:
+
+- Fixed Galaxy Windows repair so an existing SUPERNOVA service registration is
+  safely reused and reconfigured instead of being recreated.
+- Rebuilt the Dashboard in PULSAR's operational style with rolling migration
+  metrics, service health, throughput, database state, and disk utilization.
+- Unified file and directory Browse actions around a consistent localhost
+  server-filesystem picker with automatic path population.
+- Updated new Galaxy Windows installations to expose ready localhost filesystem
+  drives while preserving administrator-defined filesystem root restrictions.
+
 ## v2.1.3
 
 Highlights:
