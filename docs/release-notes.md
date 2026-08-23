@@ -10,6 +10,18 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.5
+
+Highlights:
+
+- Made Galaxy Windows repair a dedicated, non-destructive operation that
+  preserves SUPERNOVA configuration and database state.
+- Repair now restores or refreshes the Windows service, machine permissions,
+  recovery settings, readiness, and NEXUS registration without rerunning
+  database migrations.
+- Includes the Dashboard redesign and unified localhost Browse experience from
+  the v2.1.3/v2.1.4 release candidates.
+
 ## v2.1.4
 
 Highlights:
