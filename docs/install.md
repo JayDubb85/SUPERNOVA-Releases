@@ -13,7 +13,7 @@ database, configuration, and application files.
 
 ## Galaxy Windows Server Install
 
-1. Install or update NEXUS to version 1.2.1 or newer on the Windows server.
+1. Install or update NEXUS to version 1.2.2 or newer on the Windows server.
 2. Sign out of Windows and sign back in once so the NEXUS native-picker broker
    starts in the interactive desktop session.
 3. Download `SUPERNOVA-Setup-*-x64.exe` from the [latest release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest).

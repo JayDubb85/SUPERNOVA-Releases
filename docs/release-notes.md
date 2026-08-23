@@ -15,7 +15,7 @@ Public release downloads are available on GitHub:
 Highlights:
 
 - Browse buttons now open the standard Windows Explorer file or folder dialog
-  on the logged-in Galaxy server desktop through NEXUS 1.2.1 or newer.
+  on the logged-in Galaxy server desktop through NEXUS 1.2.2 or newer.
 - Existing field paths initialize the native dialog and selected server paths
   are populated automatically.
 - The restricted in-browser server picker remains available when the native
