@@ -10,6 +10,20 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.3
+
+Highlights:
+
+- Rebuilt the Dashboard in PULSAR's operational style with rolling migration
+  metrics, service health, throughput, database state, and disk utilization.
+- Unified every file and directory Browse action around a consistent
+  server-filesystem picker that restores the current path and automatically
+  populates the selected value.
+- Updated Galaxy Windows installations to expose ready localhost filesystem
+  drives while preserving administrator-defined filesystem root restrictions.
+- Added automated frontend and backend coverage for dashboard reporting and
+  server-path file and directory selection.
+
 ## v2.1.2
 
 Highlights:
