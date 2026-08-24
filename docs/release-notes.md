@@ -14,7 +14,7 @@ Public release downloads are available on GitHub:
 
 - No changes recorded yet.
 
-## v2.1.7
+## v2.1.8
 
 - Added a Windows Service page in Settings with live status, automatic refresh,
   process details, and a confirmed restart action.
