@@ -10,6 +10,13 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## Next release
+
+- Added a Windows Service page in Settings with live status, automatic refresh,
+  process details, and a confirmed restart action.
+- Restricted service-control access to SUPERNOVA's own Windows service identity;
+  the application cannot control unrelated services.
+
 ## v2.1.6
 
 Highlights:
