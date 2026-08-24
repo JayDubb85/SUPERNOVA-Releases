@@ -12,10 +12,14 @@ Public release downloads are available on GitHub:
 
 ## Next release
 
+- No changes recorded yet.
+
+## v2.1.7
+
 - Added a Windows Service page in Settings with live status, automatic refresh,
   process details, and a confirmed restart action.
-- Restricted service-control access to SUPERNOVA's own Windows service identity;
-  the application cannot control unrelated services.
+- Restricted service-control access to SUPERNOVA's own Windows service identity.
+- Added expandable live installer details without command or PowerShell window flashes.
 
 ## v2.1.6
 
