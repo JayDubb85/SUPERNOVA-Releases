@@ -14,6 +14,18 @@ Public release downloads are available on GitHub:
 
 - No changes recorded yet.
 
+## v2.1.14
+
+- Fixed Windows C-STORE failures caused by attempting to move pynetdicom's
+  chunked temporary file before pynetdicom closed it.
+- Added all standard Storage SOP Classes and all compressed/uncompressed
+  transfer syntaxes to receiver negotiation.
+- Replaced the custom listener thread with pynetdicom's managed non-blocking
+  server lifecycle for deterministic restart and shutdown.
+- Added PHI-safe association and presentation-context diagnostics.
+- Added real TCP C-STORE tests for uncompressed Explicit VR Little Endian and
+  compressed JPEG Baseline objects.
+
 ## v2.1.13
 
 - Restored serial C-MOVE retrieval by default for PACS-to-directory relay
