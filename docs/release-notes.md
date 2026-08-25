@@ -14,6 +14,20 @@ Public release downloads are available on GitHub:
 
 - No changes recorded yet.
 
+## v2.1.15
+
+- Fixed abandoned background C-MOVE operations that could continue sending
+  after a study failed or was cancelled, overloading both SUPERNOVA and the
+  source PACS with accumulating associations.
+- A failed study now aborts its owned pynetdicom association and waits for the
+  retrieve thread to stop before the migration advances.
+- Added an up-front destination write test so an unavailable or unauthorized
+  Windows/UNC directory fails before any DICOM retrieval starts.
+- Performance Mode now uses the configured bounded concurrent-study limit;
+  Single Mode remains the one-study-at-a-time compatibility option.
+- Reduced C-STORE receive overhead by avoiding a second full-file write on
+  supported same-volume storage and moving per-instance messages to debug logs.
+
 ## v2.1.14
 
 - Fixed Windows C-STORE failures caused by attempting to move pynetdicom's
