@@ -14,6 +14,18 @@ Public release downloads are available on GitHub:
 
 - No changes recorded yet.
 
+## v2.1.13
+
+- Restored serial C-MOVE retrieval by default for PACS-to-directory relay
+  workflows.
+- Kept local conversion concurrency independent, so received studies can still
+  use configured conversion workers without opening overlapping study moves.
+- Explicit API callers can still request concurrent C-MOVE workers for PACS
+  systems that have been verified to support them.
+- Clarified Single and Performance mode labels: Performance Mode overlaps
+  cataloging with serial retrieval and does not implicitly enable concurrent
+  study moves.
+
 ## v2.1.12
 
 - Fixed upgrades that could fail when an active DICOM migration needed extra
