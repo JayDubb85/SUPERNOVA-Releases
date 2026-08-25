@@ -14,6 +14,19 @@ Public release downloads are available on GitHub:
 
 - No changes recorded yet.
 
+## v2.1.11
+
+- Restored configured parallel study retrieval and transfer-syntax conversion
+  for PACS-to-directory migrations.
+- Corrected database counters so migrations larger than 2 GiB no longer fail
+  while persisting byte progress.
+- Reduced database checkpoint frequency during active image processing.
+- Streamed incoming C-STORE objects directly to disk to reduce memory and
+  avoid unnecessary DICOM re-encoding.
+- Hardened C-FIND, C-MOVE, C-STORE, listener, and database-session lifecycle
+  handling for long-running migrations.
+- Kept the browser log viewer in its fixed scrolling workspace as logs grow.
+
 ## v2.1.10
 
 - Added a Windows Service page in Settings with live status, automatic refresh,
