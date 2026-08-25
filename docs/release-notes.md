@@ -14,6 +14,15 @@ Public release downloads are available on GitHub:
 
 - No changes recorded yet.
 
+## v2.1.12
+
+- Fixed upgrades that could fail when an active DICOM migration needed extra
+  time to stop its conversion-worker child processes.
+- Setup now confirms the Windows service is fully stopped before backing up or
+  migrating PostgreSQL and fully running before probing application readiness.
+- Failed upgrades preserve the existing service registration and attempt to
+  restore the previously installed service.
+
 ## v2.1.11
 
 - Restored configured parallel study retrieval and transfer-syntax conversion
