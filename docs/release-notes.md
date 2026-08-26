@@ -10,6 +10,13 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.17
+
+- Stops waiting after two minutes when the NEXUS Windows picker does not return
+  and automatically opens the server-browser fallback.
+- Requires NEXUS 1.2.6 for the native, foreground-owned Windows Explorer picker
+  correction.
+
 ## v2.1.16
 
 - Fixed Performance Mode failure cascades caused by pynetdicom's default limit
