@@ -10,9 +10,48 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
-## Next release
+## v2.1.16
 
-- No changes recorded yet.
+- Fixed Performance Mode failure cascades caused by pynetdicom's default limit
+  of ten inbound Storage associations.
+- Added configurable SCP association capacity, live active/peak/rejected
+  association telemetry, capacity-aware C-MOVE admission, and rejection-burst
+  circuit breaking.
+- C-MOVE `0xC000` and missing-final-status failures are retried with exponential
+  backoff only when SUPERNOVA recorded correlated inbound association
+  rejections.
+- Whole-study retrieve failures now include missing images in failure totals
+  instead of showing only suboperation failures from partially received exams.
+- Improved PACS-to-directory throughput with bounded concurrent conversion and
+  corrected Windows temporary-file cleanup retries.
+- Fixed retry actions that showed a success toast but launched an invisible,
+  untracked background job. Retries now create a linked migration-history entry
+  with independent progress and logs before processing begins.
+- Grouped each migration's application log, DICOM log, audit CSV, and
+  failure/retry CSV files into one session-isolated `Migration_ID_####` folder.
+  User-facing numbering restarts at `0001` after each service restart.
+- Rebuilt the migration dashboard around live operational data. Overall,
+  study, series, image, network, disk, elapsed-time, ETA, and queue information
+  now use separate cards; inaccurate historical summary cards were removed.
+- Moved Migration History from the dashboard into a dedicated Settings section.
+- Redesigned the Settings Migration History workspace to match PULSAR, with a
+  recent-run summary, compact expandable run cards, consistent status badges
+  and buttons, clearer transfer metrics, and direct details/report actions.
+- Migration History now uses the readable migration workflow as each run's
+  title, places its short migration ID directly underneath, and treats source
+  and destination paths as supporting details.
+- Migration History now labels both identities separately: the short
+  operator-facing Migration ID and the unique PostgreSQL Database ID.
+- Migration Details now repeats the workflow, Migration ID, and Database ID in
+  its header and provides copy actions for both identifiers.
+- Final migration statistics now remain on the dashboard until the user selects
+  **Clear Dashboard**. Starting a new migration clears the previous snapshot,
+  and Study, Series, and Image progress now share one equal-width row beneath
+  the full-width overall progress card.
+- Fixed progress bars getting stuck ahead of live backend activity while a
+  directory scan expanded its file, study, and series totals. Cataloging now
+  displays honestly as indeterminate, ETA waits for a stable denominator, and
+  determinate progress uses each latest backend sample without interpolation.
 
 ## v2.1.15
 

@@ -60,6 +60,7 @@ During the run, monitor:
 
 ## 7. Review Results
 
-After the migration finishes, review the migration history, report, failed-file list, and logs.
+After the migration finishes, open **Settings → Migration History** to review
+the run details, report, failed-file list, and logs.
 
 If there are failures, review the error messages before retrying. Do not blindly retry large jobs without understanding the failure type.

@@ -49,6 +49,14 @@ This is useful when:
 
 Make sure temporary storage has enough free space.
 
+Single Mode retrieves one study at a time for broad PACS compatibility.
+Performance Mode overlaps multiple study retrieves and is appropriate when the
+source PACS supports concurrent C-MOVE operations. SUPERNOVA reserves inbound
+C-STORE association capacity, pauses new retrieves if its receiver begins
+rejecting associations, and retries studies whose C-MOVE failure is directly
+correlated with that local saturation event. Association capacity and recovery
+controls are available under DICOM settings.
+
 ## Filters
 
 Filters reduce migration scope. Useful filters include:
@@ -66,6 +74,10 @@ When testing, use a narrow date range or a single Patient ID.
 
 Use the progress view to monitor status. Depending on the workflow, you may be able to pause, resume, cancel, retry failed files, or generate a report.
 
+Retrying failed items creates a separate, linked migration that appears in
+migration history with its own progress and logs. For PACS-to-directory runs,
+SUPERNOVA retries each selected failed study through the durable work queue.
+
 ## After a Migration
 
 Review:
@@ -74,5 +86,10 @@ Review:
 - Failed-file records.
 - CSV or report output.
 - App and DICOM logs.
+
+Each run has a short label such as `Migration_ID_0001`. Numbering restarts when
+the SUPERNOVA service restarts. All application logs, DICOM logs, audit output,
+and generated failure/retry CSVs for that run are stored together in its folder
+inside the current service-session log directory.
 
 Do not delete source data until the destination has been validated through your normal operational process.
