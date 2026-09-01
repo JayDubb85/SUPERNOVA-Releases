@@ -10,6 +10,21 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.18
+
+- Makes confirmed migration cancellation authoritative and destructive: the
+  migration run, durable queue, file results, failures, relay progress, and
+  related database records are permanently removed even when live worker state
+  was lost.
+- Prevents a cancelled worker from recreating its deleted history record while
+  it unwinds.
+- Repairs **Clear all history** so it deletes all non-active migration records
+  and their dependent database state while preserving running and paused runs.
+- Clears terminal dashboard state after cancellation/history deletion and shows
+  visible success or failure feedback instead of silently logging errors in the
+  browser console.
+- Aligns the backend and frontend reported application version at 2.1.18.
+
 ## v2.1.17
 
 - Stops waiting after two minutes when the NEXUS Windows picker does not return

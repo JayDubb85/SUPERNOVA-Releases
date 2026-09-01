@@ -74,6 +74,17 @@ When testing, use a narrow date range or a single Patient ID.
 
 Use the progress view to monitor status. Depending on the workflow, you may be able to pause, resume, cancel, retry failed files, or generate a report.
 
+Cancel remains available when a migration worker is unresponsive or its live
+progress state was lost during a service interruption. After confirmation,
+Cancel permanently removes that migration's history, queued work, failures, and
+other database records. This cannot be undone. Migration log files remain on
+disk for troubleshooting.
+
+**Clear all history** in Settings permanently deletes all completed, failed,
+partial, and cancelled migration database records and their queued work and
+failure details. Running and paused migrations are preserved. The dashboard is
+also cleared when it contains one of the deleted runs. Log files remain on disk.
+
 Retrying failed items creates a separate, linked migration that appears in
 migration history with its own progress and logs. For PACS-to-directory runs,
 SUPERNOVA retries each selected failed study through the durable work queue.
