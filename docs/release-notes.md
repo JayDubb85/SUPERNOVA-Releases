@@ -10,6 +10,23 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.19
+
+- Prevents directory-to-directory and directory-to-PACS migrations from
+  remaining frozen indefinitely when Windows blocks a directory enumeration,
+  file metadata operation, or DICOM metadata read. An independent supervisor
+  stops the migration after five minutes without scanner output and records the
+  last known path in the failure.
+- Keeps confirmed cancellation responsive while scanner filesystem I/O is
+  blocked.
+- Checkpoints fully scanned directory subtrees and restores unfinished durable
+  file work after a service restart. Large migrations resume from incomplete
+  subtrees rather than silently starting another full scan from the source
+  root.
+- Allows interrupted directory work up to three lease-based processing attempts
+  instead of making the first service interruption terminal.
+- Aligns the backend and frontend reported application version at 2.1.19.
+
 ## v2.1.18
 
 - Makes confirmed migration cancellation authoritative and destructive: the

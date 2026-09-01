@@ -74,6 +74,13 @@ When testing, use a narrow date range or a single Patient ID.
 
 Use the progress view to monitor status. Depending on the workflow, you may be able to pause, resume, cancel, retry failed files, or generate a report.
 
+Directory-to-directory and directory-to-PACS migrations checkpoint fully
+scanned directory subtrees and unfinished file work. If the SUPERNOVA service
+restarts, the migration resumes from the incomplete portion of the source
+instead of beginning another complete scan. If Windows filesystem access or a
+DICOM metadata read produces no scanner result for five minutes, the migration
+fails with the last known path rather than remaining indefinitely in Running.
+
 Cancel remains available when a migration worker is unresponsive or its live
 progress state was lost during a service interruption. After confirmation,
 Cancel permanently removes that migration's history, queued work, failures, and
