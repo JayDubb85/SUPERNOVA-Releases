@@ -10,6 +10,25 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.20
+
+- Restores migration-scoped application and DICOM diagnostics. Each migration
+  writes to its own artifact folder, and the Application/DICOM log settings
+  apply to active runs without disconnecting their files.
+- Preserves genuine `pynetdicom` association, PDU, and DIMSE diagnostics while
+  presenting clearly separate SUPERNOVA workflow and correlation records.
+  This makes protocol evidence readable without replacing it with synthetic
+  messages.
+- Correctly distinguishes SUPERNOVA operation and connection IDs from the
+  actual DICOM Message ID sent by every C-STORE, C-FIND, C-MOVE, and C-ECHO
+  operation. C-STORE records cover serial, batch, and Performance Mode paths.
+- Improves migration recovery controls: confirmed cancellation and History
+  cleanup remove the selected non-active run immediately from the interface and
+  complete durable database cleanup in the background.
+- Improves the NEXUS Windows picker integration by preserving the asynchronous
+  Explorer request until the user finishes selecting a path.
+- Aligns the backend and frontend reported application version at 2.1.20.
+
 ## v2.1.19
 
 - Prevents directory-to-directory and directory-to-PACS migrations from
