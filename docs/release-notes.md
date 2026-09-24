@@ -10,6 +10,19 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.21
+
+- Reduces PostgreSQL load during directory-to-directory and directory-to-PACS
+  migrations by durably staging file work in bounded 500-file transactions.
+- Corrects directory migration recovery counters so Study and Series no longer
+  display the image count after the live worker state is unavailable.
+- Marks Study and Series complete only after every cataloged image reaches a
+  terminal result; failed runs show real processing state rather than a
+  successful end-to-end completion message.
+- Uses the authoritative per-run directory audit CSV and no longer claims a
+  separate success CSV exists when it was never created.
+- Aligns the backend and frontend reported application version at 2.1.21.
+
 ## v2.1.20
 
 - Restores migration-scoped application and DICOM diagnostics. Each migration
