@@ -10,6 +10,20 @@ Public release downloads are available on GitHub:
 
 [Latest SUPERNOVA Release](https://github.com/JayDubb85/SUPERNOVA-Releases/releases/latest)
 
+## v2.1.22
+
+- Hardens directory-to-directory and directory-to-PACS migrations against
+  scanner, queue, worker-accounting, and progress-persistence failures. A
+  terminal diagnostic now records the active phase, latest path, queue state,
+  in-flight work, and underlying exception instead of leaving a run indefinitely
+  marked as active.
+- Preserves source images when requested transfer-syntax conversion fails or
+  times out: directory migrations copy the original object and PACS migrations
+  send the original object. The audit trail records the conversion fallback;
+  an image fails only if its fallback copy or C-STORE fails.
+- Adds a five-minute crash-isolated conversion-job deadline so one hung native
+  codec cannot block the migration worker indefinitely.
+
 ## v2.1.21
 
 - Reduces PostgreSQL load during directory-to-directory and directory-to-PACS
